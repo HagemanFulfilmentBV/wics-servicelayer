@@ -1,7 +1,7 @@
 # Wics ServiceLayer
 An open source project free to use and collaborate. This package contains classes to interact with the Wics ServiceLayer API.
 
-Source code managed via GitLab: https://gitlab.com/Hageman/tailwindfui
+Source code managed via GitLab: https://gitlab.com/Hageman/wics-servicelayer
 
 <img src="https://badgen.net/packagist/lang/Hageman/wics-servicelayer" alt="language">
 <img src="https://badgen.net/packagist/php/Hageman/wics-servicelayer" alt="php">
