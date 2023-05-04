@@ -1,6 +1,5 @@
 {
     "name": "kp-hageman-fulfilment-bv/wics-servicelayer",
-    "version": "v0.1.0",
     "description": "PHP library to communicate with the Wics ServiceLayer API",
     "type": "library",
     "license": "MIT",
