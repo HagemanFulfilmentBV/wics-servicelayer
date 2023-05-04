@@ -1,0 +1,109 @@
+code:
+  type: string
+  
+description:
+  type: string
+  
+internalDescription:
+  type: string
+  
+itemGroup:
+  type: string
+  
+defaultUnit:
+  type: string
+  
+statusCode:
+  type: int
+  
+assembled:
+  type: bool
+  
+assemblyType:
+  type: string
+  
+barcode:
+  type: string
+  
+weight:
+  type: float
+  hidden: true
+  
+traceability:
+  type: string
+  hidden: true
+  
+safetyDataSheet:
+  type: string
+  hidden: true
+  
+bestBefore:
+  type: array
+  hidden: true
+  items:
+    receiptDateEntry: 
+      type: string
+      
+    bestBeforePeriod:
+      type: int
+      
+    quarantinePeriod:
+      type: int
+      
+    warrantyPeriod:
+      type: int
+  
+units:
+  type: array
+  hidden: true
+  items: 
+    unit:
+      type: string
+      
+    length:
+      type: int
+      
+    width:
+      type: int
+      
+    height:
+      type: int
+      
+    amountSKU:
+      type: int
+      
+    barcode:
+      type: string
+      
+components:
+  type: array
+  hidden: true
+  items: 
+    code:
+      type: string
+      
+    skuCode:
+      type: string
+      
+    quantity:
+      type: int
+      
+warehouses:
+  type: array
+  hidden: true
+  items: 
+    code:
+      type: string
+      
+    minimumQuantity:
+      type: int
+      
+    maximumQuantity:
+      type: int
+      
+    safeQuantity:
+      type: int
+      
+    reorderQuantity:
+      type: int
+        

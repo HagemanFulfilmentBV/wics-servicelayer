@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         verbose="true"
+>
+    <coverage>
+        <include>
+            <directory suffix=".php">src/</directory>
+        </include>
+    </coverage>
+    <testsuite name='Feature'>
+        <directory>./tests/Feature</directory>
+        <directory>./tests/Unit</directory>
+    </testsuite>
+    <php>
+        <env name="DB_CONNECTION" value="testing"/>
+        <env name="APP_KEY" value="base64:2fl+Ktvkfl+Fuz4Qp/A75G2RTiWVA/ZoKZvp6fiiM10="/>
+        
+        <env name="WICS_SERVICE_LAYER_HOST" value="https://test.servicelayer.wics.nl/api"/>
+        <env name="WICS_SERVICE_LAYER_PORT" value="80"/>
+        <env name="WICS_SERVICE_LAYER_KEY" value="pllwFiclZzmGzBTdXDsb"/>
+        <env name="WICS_SERVICE_LAYER_SECRET" value="VqAlnHOjAGtiCngIQNDB"/>
+    </php>
+</phpunit>

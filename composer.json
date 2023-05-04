@@ -1,0 +1,42 @@
+{
+    "name": "hageman/wics-servicelayer",
+    "description": "PHP library to communicate with the Wics ServiceLayer API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bert van der Stelt",
+            "email": "b.van.der.stelt@hageman.nl",
+            "role": "Owner,Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "symfony/yaml": "^6.2",
+        "laravel/framework": "9.18"
+    },
+    "require-dev":  {
+        "phpunit/phpunit": "^9.5.10",
+        "orchestra/testbench": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hageman\\Wics\\ServiceLayer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hageman\\Wics\\ServiceLayer\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hageman\\Wics\\ServiceLayer\\ServiceProvider"
+            ]
+        }
+    }
+}

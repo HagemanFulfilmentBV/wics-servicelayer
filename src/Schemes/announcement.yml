@@ -1,0 +1,55 @@
+number:
+  type: string
+  
+reference:
+  type: string
+  
+additionalReference:
+  type: string
+  
+plannedDate:
+  type: string
+  
+type:
+  type: string
+  hidden: true
+  
+warehouseCode:
+  type: string
+  
+door:
+  type: string
+  
+supplier:
+  type: int
+  
+carrier:
+  type: int
+
+stockStatus:
+  type: int
+  
+lines:
+  type: array
+  hidden: true
+  items:
+    lineNumber:
+      type: int
+      
+    itemCode:
+      type: string
+      
+    itemDescription:
+      type: string
+      
+    unit:
+      type: string
+
+    quantityExpected:
+      type: int
+
+    lotNumber:
+      type: string
+
+    bestBeforeDate:
+      type: string
