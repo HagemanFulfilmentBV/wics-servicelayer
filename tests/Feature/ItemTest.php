@@ -6,7 +6,6 @@ use Hageman\Wics\ServiceLayer\Collections\ModelCollection;
 use Hageman\Wics\ServiceLayer\Models\Item;
 use Hageman\Wics\ServiceLayer\ServiceLayer;
 use Hageman\Wics\ServiceLayer\Tests\TestCase;
-use Pimple\Tests\Fixtures\Service;
 
 class ItemTest extends TestCase
 {
